@@ -1,25 +1,27 @@
 import logo from './Holberton-Logo.jpg';
 import './App.css';
-import { getFooterCopy, getFullYear } from './utils';
+import { getFooterCopy, getFullYear} from './utils';
 
 function App() {
   return (
-    <div class="App">
-      <div class="App-header">
-        <img src={logo} class="App-logo" alt="logo"/>
+    <div className="App">
+      <div className="App-header">
+        <img src={logo} className="App-logo" alt="logo"/>
         <h1>School dashboard</h1>
       </div>
-      <div class="App-body">
-        <p>Login to access the full dashboard</p>
+      <div className="App-body">
+        <p>
+          Login to access the full dashboard
+        </p>
         <form>
           <label htmlFor="email">Email:</label>
-          <input type="email" name="email"></input>
+          <input type="email" name="email" />
           <label htmlFor="password">Password:</label>
-          <input type="password" name="password"></input>
+          <input type="password" name="password" />
           <button>OK</button>
         </form>
       </div>
-      <div class="App-footer">
+      <div className="App-footer">
         <p>Copyright {getFullYear()} - {getFooterCopy()}</p>
       </div>
     </div>
