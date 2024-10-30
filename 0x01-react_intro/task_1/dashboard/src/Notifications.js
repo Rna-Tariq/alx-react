@@ -3,7 +3,7 @@ import './Notifications.css';
 
 function Notifications() {
     return (
-        <div class="Notifications">
+        <div className="Notifications">
             <p>Here is the list of notifications</p>
         </div>
     );
