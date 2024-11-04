@@ -1,24 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom'; // Use the old 'react-dom'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Notifications from './Notifications';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+// Render the main App component
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root') // This is the root div in index.html
 );
 
-const notificationsRoot = ReactDOM.createRoot(document.getElementById('root-notifications'));
-notificationsRoot.render(
+// Render the Notifications component
+ReactDOM.render(
   <React.StrictMode>
     <Notifications />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root-notifications') // This is another root div for notifications
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Measuring performance (optional)
 reportWebVitals();
