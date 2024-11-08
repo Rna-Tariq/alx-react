@@ -1,0 +1,17 @@
+.App-body {
+	font-size: var(--gen-font-size);
+	padding: var(--padding);
+	border-bottom: var(--border-bottom);
+	height: 45%;
+}
+
+.form-inputs {
+	display: flex;
+	gap: 2em;
+	align-items: center;
+}
+
+.form-inputs .input input {
+	height: var(--gen-font-size);
+	margin-left: 10px;
+}
